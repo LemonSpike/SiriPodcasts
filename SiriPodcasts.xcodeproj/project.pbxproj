@@ -7,23 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E2C6DDCD24B6B8570081ABE3 /* SiriPodcastsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C6DDCC24B6B8570081ABE3 /* SiriPodcastsApp.swift */; };
-		E2C6DDCF24B6B8570081ABE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C6DDCE24B6B8570081ABE3 /* ContentView.swift */; };
+		E2633A5624B6D16D00C184B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2633A5524B6D16D00C184B6 /* SceneDelegate.swift */; };
 		E2C6DDD124B6B8580081ABE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C6DDD024B6B8580081ABE3 /* Assets.xcassets */; };
-		E2C6DDD424B6B8580081ABE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C6DDD324B6B8580081ABE3 /* Preview Assets.xcassets */; };
+		E2C6DDF824B6B89C0081ABE3 /* SiriPodcastsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E2C6DDDF24B6B89C0081ABE3 /* SiriPodcastsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E2C6DE0624B6B9EB0081ABE3 /* AVPlayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C6DE0224B6B9EA0081ABE3 /* AVPlayer+Extension.swift */; };
+		E2C6DE0724B6B9EB0081ABE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C6DE0324B6B9EA0081ABE3 /* ViewController.swift */; };
+		E2C6DE0824B6B9EB0081ABE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C6DE0424B6B9EA0081ABE3 /* AppDelegate.swift */; };
+		E2C6DE0924B6B9EB0081ABE3 /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2C6DE0524B6B9EB0081ABE3 /* AppIntentVocabulary.plist */; };
+		E2C6DE1124B6BA110081ABE3 /* MediaPlayerUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C6DE0C24B6BA110081ABE3 /* MediaPlayerUtilities.swift */; };
+		E2C6DE1224B6BA110081ABE3 /* MediaPlayerUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C6DE0C24B6BA110081ABE3 /* MediaPlayerUtilities.swift */; };
+		E2C6DE1824B6BA3F0081ABE3 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C6DE1724B6BA3F0081ABE3 /* IntentHandler.swift */; };
+		E2C6DE1A24B6BB720081ABE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C6DE1924B6BB720081ABE3 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E2C6DDF624B6B89C0081ABE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2C6DDC124B6B8570081ABE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2C6DDDE24B6B89C0081ABE3;
+			remoteInfo = SiriPodcastsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E2C6DDFF24B6B89C0081ABE3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E2C6DDF824B6B89C0081ABE3 /* SiriPodcastsExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E2633A5524B6D16D00C184B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E2C6DDC924B6B8570081ABE3 /* SiriPodcasts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriPodcasts.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2C6DDCC24B6B8570081ABE3 /* SiriPodcastsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriPodcastsApp.swift; sourceTree = "<group>"; };
-		E2C6DDCE24B6B8570081ABE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E2C6DDD024B6B8580081ABE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E2C6DDD324B6B8580081ABE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2C6DDD524B6B8580081ABE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C6DDDF24B6B89C0081ABE3 /* SiriPodcastsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriPodcastsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C6DDE324B6B89C0081ABE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C6DDEA24B6B89C0081ABE3 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		E2C6DE0024B6B8F20081ABE3 /* SiriPodcasts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriPodcasts.entitlements; sourceTree = "<group>"; };
+		E2C6DE0124B6B9150081ABE3 /* SiriPodcastsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriPodcastsExtension.entitlements; sourceTree = "<group>"; };
+		E2C6DE0224B6B9EA0081ABE3 /* AVPlayer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Extension.swift"; sourceTree = "<group>"; };
+		E2C6DE0324B6B9EA0081ABE3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2C6DE0424B6B9EA0081ABE3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2C6DE0524B6B9EB0081ABE3 /* AppIntentVocabulary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppIntentVocabulary.plist; sourceTree = "<group>"; };
+		E2C6DE0C24B6BA110081ABE3 /* MediaPlayerUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerUtilities.swift; sourceTree = "<group>"; };
+		E2C6DE1724B6BA3F0081ABE3 /* IntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		E2C6DE1924B6BB720081ABE3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E2C6DDC624B6B8570081ABE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2C6DDDC24B6B89C0081ABE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,7 +84,10 @@
 		E2C6DDC024B6B8570081ABE3 = {
 			isa = PBXGroup;
 			children = (
+				E2C6DE0B24B6BA110081ABE3 /* SiriPodcastsShared */,
 				E2C6DDCB24B6B8570081ABE3 /* SiriPodcasts */,
+				E2C6DDE024B6B89C0081ABE3 /* SiriPodcastsExtension */,
+				E2C6DDE924B6B89C0081ABE3 /* Frameworks */,
 				E2C6DDCA24B6B8570081ABE3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				E2C6DDC924B6B8570081ABE3 /* SiriPodcasts.app */,
+				E2C6DDDF24B6B89C0081ABE3 /* SiriPodcastsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,21 +104,43 @@
 		E2C6DDCB24B6B8570081ABE3 /* SiriPodcasts */ = {
 			isa = PBXGroup;
 			children = (
-				E2C6DDCC24B6B8570081ABE3 /* SiriPodcastsApp.swift */,
-				E2C6DDCE24B6B8570081ABE3 /* ContentView.swift */,
+				E2C6DE0424B6B9EA0081ABE3 /* AppDelegate.swift */,
+				E2633A5524B6D16D00C184B6 /* SceneDelegate.swift */,
+				E2C6DE0524B6B9EB0081ABE3 /* AppIntentVocabulary.plist */,
+				E2C6DE0224B6B9EA0081ABE3 /* AVPlayer+Extension.swift */,
+				E2C6DE1924B6BB720081ABE3 /* Main.storyboard */,
+				E2C6DE0324B6B9EA0081ABE3 /* ViewController.swift */,
+				E2C6DE0024B6B8F20081ABE3 /* SiriPodcasts.entitlements */,
 				E2C6DDD024B6B8580081ABE3 /* Assets.xcassets */,
 				E2C6DDD524B6B8580081ABE3 /* Info.plist */,
-				E2C6DDD224B6B8580081ABE3 /* Preview Content */,
 			);
 			path = SiriPodcasts;
 			sourceTree = "<group>";
 		};
-		E2C6DDD224B6B8580081ABE3 /* Preview Content */ = {
+		E2C6DDE024B6B89C0081ABE3 /* SiriPodcastsExtension */ = {
 			isa = PBXGroup;
 			children = (
-				E2C6DDD324B6B8580081ABE3 /* Preview Assets.xcassets */,
+				E2C6DE0124B6B9150081ABE3 /* SiriPodcastsExtension.entitlements */,
+				E2C6DE1724B6BA3F0081ABE3 /* IntentHandler.swift */,
+				E2C6DDE324B6B89C0081ABE3 /* Info.plist */,
 			);
-			path = "Preview Content";
+			path = SiriPodcastsExtension;
+			sourceTree = "<group>";
+		};
+		E2C6DDE924B6B89C0081ABE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2C6DDEA24B6B89C0081ABE3 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2C6DE0B24B6BA110081ABE3 /* SiriPodcastsShared */ = {
+			isa = PBXGroup;
+			children = (
+				E2C6DE0C24B6BA110081ABE3 /* MediaPlayerUtilities.swift */,
+			);
+			path = SiriPodcastsShared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,15 +153,34 @@
 				E2C6DDC524B6B8570081ABE3 /* Sources */,
 				E2C6DDC624B6B8570081ABE3 /* Frameworks */,
 				E2C6DDC724B6B8570081ABE3 /* Resources */,
+				E2C6DDFF24B6B89C0081ABE3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E2C6DDF724B6B89C0081ABE3 /* PBXTargetDependency */,
 			);
 			name = SiriPodcasts;
 			productName = SiriPodcasts;
 			productReference = E2C6DDC924B6B8570081ABE3 /* SiriPodcasts.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E2C6DDDE24B6B89C0081ABE3 /* SiriPodcastsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2C6DDFC24B6B89C0081ABE3 /* Build configuration list for PBXNativeTarget "SiriPodcastsExtension" */;
+			buildPhases = (
+				E2C6DDDB24B6B89C0081ABE3 /* Sources */,
+				E2C6DDDC24B6B89C0081ABE3 /* Frameworks */,
+				E2C6DDDD24B6B89C0081ABE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriPodcastsExtension;
+			productName = SiriPodcastsExtension;
+			productReference = E2C6DDDF24B6B89C0081ABE3 /* SiriPodcastsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +193,11 @@
 				TargetAttributes = {
 					E2C6DDC824B6B8570081ABE3 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
+					};
+					E2C6DDDE24B6B89C0081ABE3 = {
+						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -117,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				E2C6DDC824B6B8570081ABE3 /* SiriPodcasts */,
+				E2C6DDDE24B6B89C0081ABE3 /* SiriPodcastsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -126,8 +225,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2C6DDD424B6B8580081ABE3 /* Preview Assets.xcassets in Resources */,
+				E2C6DE1A24B6BB720081ABE3 /* Main.storyboard in Resources */,
 				E2C6DDD124B6B8580081ABE3 /* Assets.xcassets in Resources */,
+				E2C6DE0924B6B9EB0081ABE3 /* AppIntentVocabulary.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2C6DDDD24B6B89C0081ABE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,12 +245,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2C6DDCF24B6B8570081ABE3 /* ContentView.swift in Sources */,
-				E2C6DDCD24B6B8570081ABE3 /* SiriPodcastsApp.swift in Sources */,
+				E2633A5624B6D16D00C184B6 /* SceneDelegate.swift in Sources */,
+				E2C6DE0824B6B9EB0081ABE3 /* AppDelegate.swift in Sources */,
+				E2C6DE1124B6BA110081ABE3 /* MediaPlayerUtilities.swift in Sources */,
+				E2C6DE0724B6B9EB0081ABE3 /* ViewController.swift in Sources */,
+				E2C6DE0624B6B9EB0081ABE3 /* AVPlayer+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2C6DDDB24B6B89C0081ABE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2C6DE1824B6BA3F0081ABE3 /* IntentHandler.swift in Sources */,
+				E2C6DE1224B6BA110081ABE3 /* MediaPlayerUtilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2C6DDF724B6B89C0081ABE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2C6DDDE24B6B89C0081ABE3 /* SiriPodcastsExtension */;
+			targetProxy = E2C6DDF624B6B89C0081ABE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E2C6DDD624B6B8580081ABE3 /* Debug */ = {
@@ -265,10 +392,37 @@
 		E2C6DDD924B6B8580081ABE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SiriPodcasts/SiriPodcasts.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SiriPodcasts/Preview Content\"";
+				DEVELOPMENT_TEAM = C3BX32XR8J;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SiriPodcasts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasprasols.SiriPodcasts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2C6DDDA24B6B8580081ABE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SiriPodcasts/SiriPodcasts.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3BX32XR8J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SiriPodcasts/Info.plist;
@@ -282,25 +436,46 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Release;
 		};
-		E2C6DDDA24B6B8580081ABE3 /* Release */ = {
+		E2C6DDFD24B6B89C0081ABE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SiriPodcastsExtension/SiriPodcastsExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SiriPodcasts/Preview Content\"";
 				DEVELOPMENT_TEAM = C3BX32XR8J;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SiriPodcasts/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_FILE = SiriPodcastsExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kasprasols.SiriPodcasts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasprasols.SiriPodcasts.SiriPodcastsExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2C6DDFE24B6B89C0081ABE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SiriPodcastsExtension/SiriPodcastsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3BX32XR8J;
+				INFOPLIST_FILE = SiriPodcastsExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasprasols.SiriPodcasts.SiriPodcastsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,6 +498,15 @@
 			buildConfigurations = (
 				E2C6DDD924B6B8580081ABE3 /* Debug */,
 				E2C6DDDA24B6B8580081ABE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2C6DDFC24B6B89C0081ABE3 /* Build configuration list for PBXNativeTarget "SiriPodcastsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2C6DDFD24B6B89C0081ABE3 /* Debug */,
+				E2C6DDFE24B6B89C0081ABE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

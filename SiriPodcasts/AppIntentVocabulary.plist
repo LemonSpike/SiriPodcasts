@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IntentPhrases</key>
+	<array>
+		<dict>
+			<key>IntentName</key>
+			<string>INPlayMediaIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Put on The Talk Show with John Gruber podcast from Siri Podcasts</string>
+			</array>
+		</dict>
+		<dict>
+			<key>IntentName</key>
+			<string>INAddMediaIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Add this song to my sample playlist in ControlAudio</string>
+			</array>
+		</dict>
+	</array>
+	<key>ParameterVocabularies</key>
+	<array>
+		<dict>
+			<key>ParameterNames</key>
+			<array>
+				<string>INPlayMediaIntent.showTitle</string>
+			</array>
+			<key>ParameterVocabulary</key>
+			<array>
+				<dict>
+					<key>VocabularyItemIdentifier</key>
+					<string>The Talk Show with John Gruber</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
