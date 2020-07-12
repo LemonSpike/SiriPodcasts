@@ -58,6 +58,17 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.notificationcenterui">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E2C6DDDE24B6B89C0081ABE3"
+            BuildableName = "SiriPodcastsExtension.appex"
+            BlueprintName = "SiriPodcastsExtension"
+            ReferencedContainer = "container:SiriPodcasts.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"

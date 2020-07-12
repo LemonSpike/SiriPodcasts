@@ -18,12 +18,12 @@ class MediaPlayerUtilities {
     }
 
     class func searchForPodcastInLocalLibrary(byName playlistName: String) -> MPMediaItem? {
-        let predicate = MPMediaPropertyPredicate(value: playlistName, forProperty: MPMediaPlaylistPropertyName)
+        let predicate = MPMediaPropertyPredicate(value: playlistName, forProperty: MPMediaItemPropertyPodcastTitle)
         return searchForPodcastInLocalLibrary(withPredicate: predicate)
     }
 
     class func searchForPodcastInLocalLibrary(byPersistentID persistentID: UInt64) -> MPMediaItem? {
-        let predicate = MPMediaPropertyPredicate(value: persistentID, forProperty: MPMediaPlaylistPropertyPersistentID)
+        let predicate = MPMediaPropertyPredicate(value: persistentID, forProperty: MPMediaItemPropertyPersistentID)
         return searchForPodcastInLocalLibrary(withPredicate: predicate)
     }
 }
