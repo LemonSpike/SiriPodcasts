@@ -18,11 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
-    // Set our playlist title in AppIntentVocabulary.plist so we get the proper Siri intent.
-    // In your app, you'll want to make this dynamically tuned to a user's playlist titles.
+    // Set our podcast title in AppIntentVocabulary.plist so we get the proper Siri intent.
+    // In your app, you'll want to make this dynamically tuned to a user's podcast titles.
     let vocabulary = INVocabulary.shared()
-    let playlistNames = NSOrderedSet(objects: "The Talk Show with John Gruber")
-    vocabulary.setVocabularyStrings(playlistNames, of: .mediaShowTitle)
+    let podcastNames = NSOrderedSet(objects: "The Talk Show with John Gruber")
+    vocabulary.setVocabularyStrings(podcastNames, of: .mediaShowTitle)
     
     INPreferences.requestSiriAuthorization { (status) in
       print(status)
@@ -43,9 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       return
     }
     
-    // Check if this media item is a playlist and if it's identifier has the local library prefix.
+    // Check if this media item is a podcast and if it's identifier has the local library prefix.
     if mediaItem.type == .podcastShow, let range = identifier.range(of: MediaPlayerUtilities.LocalLibraryIdentifierPrefix) {
-      // Extract the persistentID for the local playlist and look it up in the library.
+      // Extract the persistentID for the local podcast and look it up in the library.
       guard let persistentID = UInt64(identifier[range.upperBound...]),
             let podcast = MediaPlayerUtilities.searchForPodcastInLocalLibrary(byPersistentID: persistentID) else {
         return
@@ -55,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return
       }
       
-      // Set the player queue to the local playlist.
+      // Set the player queue to the local podcast.
       player = AVPlayer(url: podcastURL)
       
       DispatchQueue.main.async {

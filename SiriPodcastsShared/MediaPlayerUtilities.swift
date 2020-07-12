@@ -17,8 +17,8 @@ class MediaPlayerUtilities {
       return mediaQuery.items?.first
     }
 
-    class func searchForPodcastInLocalLibrary(byName playlistName: String) -> MPMediaItem? {
-        let predicate = MPMediaPropertyPredicate(value: playlistName, forProperty: MPMediaItemPropertyPodcastTitle)
+    class func searchForPodcastInLocalLibrary(byName podcastName: String) -> MPMediaItem? {
+        let predicate = MPMediaPropertyPredicate(value: podcastName, forProperty: MPMediaItemPropertyPodcastTitle)
         return searchForPodcastInLocalLibrary(withPredicate: predicate)
     }
 

@@ -29,10 +29,10 @@ class IntentHandler: INExtension, INPlayMediaIntentHandling {
     return INImage(url: url)
   }
   
-  func resolveLocalPlaylistFromSearch(_ mediaSearch: INMediaSearch, completion: ([INMediaItem]?) -> Void) {
-    // Look up playlist in the local library.
-    guard let playlistName = mediaSearch.mediaName,
-          let podcast = MediaPlayerUtilities.searchForPodcastInLocalLibrary(byName: playlistName) else {
+  func resolveLocalpodcastFromSearch(_ mediaSearch: INMediaSearch, completion: ([INMediaItem]?) -> Void) {
+    // Look up podcast in the local library.
+    guard let podcastName = mediaSearch.mediaName,
+          let podcast = MediaPlayerUtilities.searchForPodcastInLocalLibrary(byName: podcastName) else {
       completion(nil)
       return
     }
@@ -53,7 +53,7 @@ class IntentHandler: INExtension, INPlayMediaIntentHandling {
       // Not sure how to develop my own custom logic to have a highly robust search from Siri transcription in case this is the issue as I can't use breakpoints. :(
       switch mediaSearch.mediaType {
         case .podcastShow:
-          self.resolveLocalPlaylistFromSearch(mediaSearch, completion: completion)
+          self.resolveLocalpodcastFromSearch(mediaSearch, completion: completion)
         default:
           completion(nil)
       }

@@ -12,14 +12,6 @@
 				<string>Put on The Talk Show with John Gruber podcast from Siri Podcasts</string>
 			</array>
 		</dict>
-		<dict>
-			<key>IntentName</key>
-			<string>INAddMediaIntent</string>
-			<key>IntentExamples</key>
-			<array>
-				<string>Add this song to my sample playlist in ControlAudio</string>
-			</array>
-		</dict>
 	</array>
 	<key>ParameterVocabularies</key>
 	<array>
